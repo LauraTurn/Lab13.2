@@ -1,0 +1,29 @@
+﻿@model List<Customer>
+@{
+    ViewData["Title"] = "AddInfo";
+}
+<h1>CONFIRMATION PAGE</h1>
+
+<!--Can use Model instead of Customer.AllInfo below-->
+@foreach (Customer cust in Customer.AllInfo)
+{
+<div>
+
+    Name: @cust.surname @cust.first @cust.last <br />
+    Email: @cust.emailaddress <br />
+    Password: ***** <br />
+    Password Confirmation: ***** <br />
+    <!--@cust.custage <br /> -->
+    Phone: @cust.phone <br />
+    Fax: @cust.fax <br />
+
+</div>
+}
+
+
+<br />
+<br />
+<br />
+<br />
+<a href ="/home/seeform"><strong>Register another guest?</strong></a>
+

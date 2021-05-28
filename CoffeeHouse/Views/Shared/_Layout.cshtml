@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Hot Grounds Inc.</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+
+
+    <style>
+        a {
+            color: blue;
+            font-weight: bold;
+            font-family: 'Times'
+        }
+    </style>
+
+    <style>
+        /* Add some padding on document's body to prevent the content
+        to go underneath the header and footer */
+        body {
+            padding-top: 60px;
+            padding-bottom: 40px;
+        }
+
+        .fixed-header, .fixed-footer {
+            width: 100%;
+            position: fixed;
+            background: #333;
+            padding: 10px 0;
+            color: #fff;
+        }
+
+        .fixed-header {
+            top: 0;
+        }
+
+        .fixed-footer {
+            bottom: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto; /* Center the DIV horizontally */
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 7px 25px;
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="fixed-header">
+        <div class="container">
+            <nav>
+                <a href="Index">Home</a>
+                <a href="seeform">Register</a>
+                <a href="/Product">Products</a>
+                <a href="#">Services</a>
+                <a href="#">Contact Us</a>
+            </nav>
+        </div>
+    </div>
+    <div class="container">
+        <p>"I never laugh until I’ve had my coffee." ~ Clark Gable</p>
+    </div>
+    <div class="fixed-footer">
+        <div class="container">Copyright &copy; 2021 Hot Grounds Inc.</div>
+    </div>
+
+
+    @RenderBody()
+</body>
+</html>

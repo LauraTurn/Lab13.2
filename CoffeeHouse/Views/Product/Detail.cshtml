@@ -1,0 +1,22 @@
+﻿@model List<Product>
+@{
+    ViewData["Title"] = "Detail";
+}
+
+<h1>Details!</h1>
+
+There are @Model.Count products.
+
+@foreach (Product prod in Model)
+{
+<div>
+    <br />
+    <strong>@prod.id. @prod.name </strong><br />
+        Description: @prod.description <br />
+        Price: @prod.price <br />
+        <br />
+
+</div>
+}
+
+

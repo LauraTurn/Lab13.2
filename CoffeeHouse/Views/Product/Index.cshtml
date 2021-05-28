@@ -1,0 +1,17 @@
+﻿@model List<String>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Products Index</h1>
+
+
+@foreach (String categ in Model)
+{
+    
+    <a href="/product/detail/@categ">@categ</a> //
+    <br />
+    
+}
+

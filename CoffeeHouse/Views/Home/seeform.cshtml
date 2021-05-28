@@ -1,0 +1,81 @@
+﻿
+@{
+    ViewData["Title"] = "seeform";
+}
+
+<h1>REGISTRATION FORM</h1>
+
+<div class="container">
+    <form method="post" action="/home/AddInfo">
+
+        <TABLE BORDER="1">
+            <TR>
+                <TD>First Name:</TD>
+                <TD> <INPUT TYPE="text" name="first" required="required" SIZE="25"></TD>
+            </TR>
+            <TR>
+                <TD>Last Name:</TD>
+                <TD><INPUT TYPE="text" name="last" required="required" SIZE="25"></TD>
+            </TR>
+            <TR>
+                <TD>Surname:</TD>
+                <TD><INPUT TYPE="text" placeholder="Mrs. Ms. Mr." name="surname"  SIZE="25"></TD>
+            </TR>
+            <TR>
+                <TD><label for="phonenumber">Phone Number:</label></TD>
+                <TD><INPUT TYPE="tel" placeholder="999-444-5555" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" SIZE="25"></TD>
+            </TR>
+            <TR>
+                <TD><label for="fax">Fax Number:</label></TD>
+                <TD><INPUT TYPE="tel" placeholder="999-444-5555" name="fax" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" SIZE="25"></TD>
+            </TR>
+            <TR>
+                <TD><label for="email">Email Address:</label></TD>
+                <TD><INPUT TYPE="email" placeholder="eg Sparty@msu.edu" name="emailaddress" pattern=".+&#64.+&#46.+" SIZE="25"></TD>
+            </TR>
+            <TR>
+                <TD>Password:</TD>
+                <TD><INPUT TYPE="password" placeholder="Password" name="pass" SIZE="25" required="required"></TD>
+            </TR>
+            <TR>
+                <TD>Confirm Password:</TD>
+                <TD><INPUT TYPE="password" placeholder="Retype Password" name="confirmpass" SIZE="25" required="required"></TD>
+            </TR>
+        </TABLE>
+
+
+
+        <br /><br />
+        <p>Please select your age:</p>
+        <input type="radio" id="age1" name="custage" value="17">
+        <label for="age1">0 - 17</label>
+        <br />
+        <input type="radio" id="age2" name="custage" value="39">
+        <label for="age2">18 - 39</label>
+        <br />
+        <input type="radio" id="age3" name="custage" value="49">
+        <label for="age3">40 - 49</label>
+        <br />
+        <input type="radio" id="age4" name="custage" value="100">
+        <label for="age3">50 - 100</label>
+        <br />
+        <input type="radio" id="age4" name="custage" value="101">
+        <label for="age3">Mind your business!</label>
+        <br />
+        <br />
+
+        <br />
+        <P><INPUT TYPE="SUBMIT" VALUE="Submit" NAME="B1"></P><br />
+        <input type="reset" />
+    </form>
+</div>
+
+
+<!-- <div id="message">
+    <h3>Password must contain the following:</h3>
+    <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+    <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+    <p id="number" class="invalid">A <b>number</b></p>
+    <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+</div>
+    -->
